@@ -1,6 +1,6 @@
 package system_of_geometric;
 
-public class Square extends Rectangle {
+public class Square extends Rectangle implements Colorable{
     public Square() {
     }
 
@@ -38,4 +38,10 @@ public class Square extends Rectangle {
                 + ", which is a subclass of "
                 + super.toString();
     }
+
+	@Override
+	public void howToColor() {
+		System.out.println("Color all four sides.");
+		
+	}
 }
