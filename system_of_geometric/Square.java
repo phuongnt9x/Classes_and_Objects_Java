@@ -1,6 +1,6 @@
 package system_of_geometric;
 
-public class Square extends Rectangle {
+public class Square extends Rectangle implements Resizeable {
     public Square() {
     }
 

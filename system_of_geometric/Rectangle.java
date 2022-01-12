@@ -1,6 +1,6 @@
 package system_of_geometric;
 
-public class Rectangle extends Shape {
+public class Rectangle extends Shape implements Resizeable {
     private double width = 1.0;
     private double length = 1.0;
 
@@ -51,4 +51,10 @@ public class Rectangle extends Shape {
                 + ", which is a subclass of "
                 + super.toString();
     }
+
+	public void resize(double percent) {
+		double area=getArea();
+		System.out.println(area+(area*percent));
+		
+	}
 }

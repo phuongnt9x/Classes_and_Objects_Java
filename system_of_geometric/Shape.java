@@ -32,4 +32,5 @@ public class Shape {
 	public String toString() {
 		return "A Shape with color of " + getColor() + " and " + (isFilled() ? "filled" : "not filled");
 	}
+
 }

@@ -1,6 +1,6 @@
 package system_of_geometric;
 
-public class Circle extends Shape {
+public class Circle extends Shape implements Resizeable {
 	private double radius = 1.0;
 
     public Circle() {
@@ -38,5 +38,13 @@ public class Circle extends Shape {
                 + ", which is a subclass of "
                 + super.toString();
     }
+
+	public void resize(double percent) {
+		double area=getArea();
+		System.out.println(area+(area*percent));
+		
+	}
+
+
 }
 
